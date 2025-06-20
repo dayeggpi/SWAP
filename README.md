@@ -4,6 +4,9 @@ SmartWindowsAudioProfiles (SWAP)
 This software is not affiliated and is an independent software that needs SoundVolumeView by NirSoft (https://www.nirsoft.net/utils/sound_volume_view.html) to work properly.
 Support NirSoft's amazing tools.
 
+
+![Image](https://i.imgur.com/FdHoP3b.gif)
+
 ## Usage
 Launch with `python swap.py`
 
