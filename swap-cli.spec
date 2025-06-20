@@ -1,8 +1,8 @@
-# swap.spec
+# swap-cli.spec
 block_cipher = None
 
 a = Analysis(
-    ['swap.py'],
+    ['swap-cli.py'],
     pathex=[],
     binaries=[],
     datas=[('icon.ico', '.')],
@@ -24,11 +24,11 @@ exe = EXE(
     a.zipfiles,
     a.datas,
     [],
-    name='SWAP',
+    name='SWAP-cli',
     debug=False,
     bootloader_ignore_signals=False,
     strip=False,
     upx=True,
-    console=False,
+    console=True,
     icon='icon.ico'
 )

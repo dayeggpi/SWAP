@@ -400,21 +400,25 @@ class AudioProfileManager:
             else:
                 self.changes_pending = True
             self.mark_profiles_tab_unsaved() 
-            
+
+
     def delete_profile(self):
         current = self.profile_var.get()
+        print(f"Before deletion: {list(self.profiles.keys())}")
         if current == "Select a profile...":
             messagebox.showwarning("Warning", "Please select a valid profile.", parent=self.root)
             return        
         if not current:
             messagebox.showwarning("Warning", "No profile selected!", parent=self.root)
             return
-        
+
         if messagebox.askyesno("Confirm", f"Delete profile '{current}'?"):
             del self.profiles[current]
+            print(f"After deletion: {list(self.profiles.keys())}")
             self.update_profile_combo()
             self.profile_var.set("Select a profile...")
             self.on_profile_selected()
+
             if getattr(self, 'auto_save_var', True) and self.auto_save_var.get():
                 self.save_config()
                 self.changes_pending = False
@@ -560,7 +564,6 @@ class AudioProfileManager:
 
 
     def on_profile_selected(self, event=None):
-        self.load_config()
         selected = self.profile_var.get()
         if selected == "Select a profile..." or selected not in self.profiles:
             self.rules_listbox.delete(0, tk.END)
