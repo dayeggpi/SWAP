@@ -10,7 +10,7 @@ Launch with `python swap.py`
 You can also compile it to an exe by having the *.ico and *.spec file in same folder as swap.py and doing `pyinstaller swap.spec`. The output exe will be in the "dist" folder.
 Then you simply execute the exe file to launch it.
 
-Once launched, the app will ask you to provide the path where SoundVolumeView by NirSoft is installed (or you can also put SoundVolumeView.exe in the same folder as SmartWindowsAudioProfiles.exe).
+Once launched, the app will ask you to provide the path where SoundVolumeView by NirSoft is installed (or you can also put SoundVolumeView.exe in the same folder as SWAP.exe).
 
 Once done, click on "Test SoundVolumeView" to ensure that the app is properly linked to SmartWindowsAudioProfiles.
 
@@ -26,7 +26,7 @@ Once done, save and you can create another profile.
 
 When you wish, you can then activate a profile by selecting it, and clicking on "Activate profile".
 
-Alternatively, you can also activate a profile via command line as such : `SmartWindowsAudioProfiles.exe PROFILE_NAME` where PROFILE_NAME is the name of your profile.
+Alternatively, you can also activate a profile via command line as such : `SWAP.exe PROFILE_NAME` where PROFILE_NAME is the name of your profile.
 
 ![Image]()
 
@@ -38,7 +38,7 @@ A config.ini file will be generated to adjust some settings.
 soundvolumeview_path = SoundVolumeView.exe
 auto_save = False
 ```
-adjust "soundvolumeview_path" as per the path to SoundVolumeView.exe (it can be as is if SoundVolumeView.exe is in the PATH environement, or in same folder as SmartWindowsAudioProfiles.exe
+adjust "soundvolumeview_path" as per the path to SoundVolumeView.exe (it can be as is if SoundVolumeView.exe is in the PATH environement, or in same folder as SWAP.exe
 
 adjust "auto_save" to True or False to save automatically any changes done on profiles/rules.
 
