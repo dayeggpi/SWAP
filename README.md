@@ -11,13 +11,21 @@ You can also compile it to an exe by having the *.ico and *.spec file in same fo
 Then you simply execute the exe file to launch it.
 
 Once launched, the app will ask you to provide the path where SoundVolumeView by NirSoft is installed (or you can also put SoundVolumeView.exe in the same folder as SmartWindowsAudioProfiles.exe).
+
 Once done, click on "Test SoundVolumeView" to ensure that the app is properly linked to SmartWindowsAudioProfiles.
+
 Go to "Audio Devices" tab and Refresh Device List.
+
 You can now go to"Profiles" and create a new profile then start adding rules.
+
 The rules will be to set an Input audio device and an Output audio devices for a given running application.
+
 Each rule is in two parts (input+output).
+
 Once done, save and you can create another profile.
+
 When you wish, you can then activate a profile by selecting it, and clicking on "Activate profile".
+
 Alternatively, you can also activate a profile via command line as such : `SmartWindowsAudioProfiles.exe PROFILE_NAME` where PROFILE_NAME is the name of your profile.
 
 ![Image]()
