@@ -1,8 +1,8 @@
 # SWAP
 SmartWindowsAudioProfiles (SWAP)
 
-This software is not affiliated and is an independent software that needs SoundVolumeView by NirSoft (https://www.nirsoft.net/utils/sound_volume_view.html) to work properly.
-Support NirSoft's amazing tools.
+This software is not affiliated and is an independent software that needs EarTrumpet (WITH CLI COMMAND FEATURE) to work properly.
+This version with CLI command can be found from my fork repo here https://github.com/dayeggpi/EarTrumpet (to compile it yourself) or attached in this SWAP repo pre-compiled for Windows (until EarTrumpet accepts my PR to merge the code for CLI command into the official repo: https://github.com/File-New-Project/EarTrumpet/pull/1765).
 
 
 ![Image](https://i.imgur.com/FdHoP3b.gif)
@@ -13,9 +13,9 @@ Launch with `python swap.py`
 You can also compile it to an exe by having the *.ico and *.spec file in same folder as swap.py and doing `pyinstaller swap.spec`. The output exe will be in the "dist" folder.
 Then you simply execute the exe file to launch it.
 
-Once launched, the app will ask you to provide the path where SoundVolumeView by NirSoft is installed (or you can also put SoundVolumeView.exe in the same folder as SWAP.exe).
+Once launched, the app will ask you to provide the path where EarTrumpet (with CLI command) is installed.
 
-Once done, click on "Test SoundVolumeView" to ensure that the app is properly linked to SmartWindowsAudioProfiles.
+Once done, click on "Test EarTrumpet" to ensure that the app is properly linked to SmartWindowsAudioProfiles.
 
 Go to "Audio Devices" tab and Refresh Device List.
 
@@ -38,10 +38,10 @@ A config.ini file will be generated to adjust some settings.
 
 ```
 [App]
-soundvolumeview_path = SoundVolumeView.exe
-auto_save = False
+eartrumpet_path = C:/Program Files/EarTrumpet/EarTrumpet.exe
+auto_save = True
 ```
-adjust "soundvolumeview_path" as per the path to SoundVolumeView.exe (it can be as is if SoundVolumeView.exe is in the PATH environement, or in same folder as SWAP.exe
+adjust "eartrumpet_path" as per the path to EarTrumpet.exe (it can be as is if EarTrumpet.exe is in the PATH environement, or in same folder as SWAP.exe)
 
 adjust "auto_save" to True or False to save automatically any changes done on profiles/rules.
 
